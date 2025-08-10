@@ -12,3 +12,7 @@ mybatis:
     - classpath:mapper/*.xml
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
+jwt:
+  secret: ymc334859SpringBootSeckillProject2024FullStackDevelopmentSecurityKeyWith512BitsOrMoreForJWTTokenSigningAndVerificationProcessAppendContentForJwtLength
+  expiration: 7200
+  token-header: Authorization

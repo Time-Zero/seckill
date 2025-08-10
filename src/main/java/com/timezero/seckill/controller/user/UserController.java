@@ -1,5 +1,6 @@
 package com.timezero.seckill.controller.user;
 
+import com.timezero.seckill.annotations.NoAuth;
 import com.timezero.seckill.entity.UserEntity;
 import com.timezero.seckill.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,7 @@ public class UserController {
 
     private final UserService userService;
 
+    @NoAuth
     @RequestMapping("/get")
     public UserEntity getUserInfo(Integer id) {
         return userService.getById(id);

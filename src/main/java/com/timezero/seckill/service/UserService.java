@@ -9,5 +9,12 @@ import com.timezero.seckill.entity.UserEntity;
  * @author TimeZero
  */
 public interface UserService extends IService<UserEntity> {
-
+    /**
+     * 登录
+     *
+     * @param username
+     * @param password
+     * @return
+     */
+    UserEntity authenticate(String username, String password);
 }
